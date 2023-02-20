@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'ask', to: 'questions#ask'
   get "/ask?name=something_you_typed", to: "question#answer"
   get "answer", to: "questions#answer"
+  get "/answer", to: "question#ask"
 end
